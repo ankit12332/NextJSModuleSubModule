@@ -1,12 +1,9 @@
-import MainLayout from '../components/MainLayout';
-import '../styles/globals.css'
+import '../styles/globals.css';
+import '../styles/dashboard/treeView.css'; 
+import "../styles/dashboard/sideBar.css"
 
 function MyApp({ Component, pageProps }) {
-    return (
-        <MainLayout>
-            <Component {...pageProps} />
-        </MainLayout>
-    )
+  return <Component {...pageProps} />
 }
 
 export default MyApp;

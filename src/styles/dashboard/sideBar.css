@@ -1,0 +1,45 @@
+.aside {
+    overflow-y: auto; /* Enables vertical scrolling if content overflows */
+    height: calc(100vh - 60px); /* Adjust 60px to the height of your header/footer */
+    width: 300px;
+    transition: margin-left 0.5s; /* Smooth transition for the sidebar movement */
+  }
+
+  .aside-open {
+    margin-left: 0; /* Sidebar visible */
+  }
+  
+  .aside-closed {
+    margin-left: -300px; /* Sidebar hidden */
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: calc(100vh - 60px); /* Adjust height to account for any headers or footers */
+    transition: margin-left 0.5s; /* Smooth transition for the content area */
+  }
+  
+  /* Adjust main content when sidebar is closed */
+  .aside-closed ~ .main-content {
+    margin-left: 0;
+  }
+  
+  
+  /* Custom Scrollbar styles */
+.aside::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .aside::-webkit-scrollbar-track {
+    background: #2d3748; /* Color of the scrollbar track */
+  }
+  
+  .aside::-webkit-scrollbar-thumb {
+    background: #4a5568; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners on the scrollbar thumb */
+  }
+  
+  .aside::-webkit-scrollbar-thumb:hover {
+    background: #718096; /* Color of the scrollbar thumb on hover */
+  }

@@ -1,0 +1,34 @@
+.tree-view .node-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+  }
+
+  .tree-view .node-title {
+    @apply text-sm md:text-base; /* Smaller text on mobile */
+  }
+  
+  .tree-view .node-title:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 68);
+    font-weight: 500;
+  }
+  
+  .submodules {
+    overflow: hidden;
+    padding-left: 20px; /* Adjust this value as needed */
+  }
+  
+
+  .tree-view .icon {
+    /* Add styling for the icon here */
+    margin-right: 8px; /* Space between icon and text */
+    cursor: pointer; /* Change cursor on hover */
+    /* Other styling as needed */
+}
